@@ -1,0 +1,8 @@
+include(default)
+
+[settings]
+build_type=Release
+compiler.cppstd=20
+
+[conf]
+tools.cmake.cmaketoolchain:extra_variables={"CMAKE_BUILD_TYPE": "Release"}

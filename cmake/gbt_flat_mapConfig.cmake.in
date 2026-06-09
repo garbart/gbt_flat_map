@@ -1,0 +1,5 @@
+@PACKAGE_INIT@
+
+include("${CMAKE_CURRENT_LIST_DIR}/gbt_flat_mapTargets.cmake")
+
+check_required_components(gbt_flat_map)
