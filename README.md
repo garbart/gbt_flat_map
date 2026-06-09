@@ -55,12 +55,6 @@ cmake --build build
 
 The benchmark uses a fixed deterministic suite grouped by key type: 1M `uint64_t` keys, 500k medium `std::string` keys, and 750k 16-byte record keys. Each key type runs the same scenarios: random insertion with and without `reserve()`, random hit lookup, random miss lookup, full iteration, random erase, and a mixed 70% lookup / 15% insert / 15% erase workload. The table also estimates the final container-owned memory after each scenario.
 
-Run the benchmark executable after building it:
-
-```sh
-./build/benchmark/gbt_flat_map_benchmark
-```
-
 The benchmark prints `avg ns/op`, best-relative speed, estimated memory, and a result check for every scenario. Lower `ns/op` is better.
 
 Example summary from one local run:
